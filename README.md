@@ -31,7 +31,7 @@ Remote - WSL - by Microsoft
 
 ## SETUP:
 ```batch
-git clone 
+git clone https://github.com/shahraship/nimbus-ui.git
 cd nimbus-ui
 npm i
 docker-compose build
