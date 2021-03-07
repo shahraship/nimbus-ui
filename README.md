@@ -40,7 +40,7 @@ cd nimbus-ui
 npm i
 docker-compose build
 docker-compose up
-docker build -t nginx-angular -f nginx.dockerfile .
+docker build -t nimbus-ui:0.0.1 -f nginx.dockerfile .
 ```
 
 

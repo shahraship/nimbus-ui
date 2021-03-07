@@ -3,8 +3,8 @@ version: '3.7'
 services:
 
   nginx:
-    container_name: nginx-angular
-    image: nginx-angular
+    container_name: nimbus-ui
+    image: nimbus-ui
     build:
       context: .
       dockerfile: nginx.dockerfile
