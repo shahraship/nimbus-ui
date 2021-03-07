@@ -7,7 +7,9 @@
 docker -v
 ```
 // should output: Docker version 20.10.2, build 2291f61 (or something newer)
+
 Create an account on docker.com with free subscription
+
 Ensure you sign-in when you lauch docker desktop
 
 ### Ensure node is installed (if not, install from here: https://nodejs.org/en/download/)
@@ -25,7 +27,9 @@ ng --version
 ### Ensure vscode editor is installed. (if not, install from here: https://code.visualstudio.com/)
 #### Install the following extensions on VSCode:
 Docker - by Microsoft
+
 Kubernetes - by Microsoft
+
 Remote - WSL - by Microsoft
 
 
