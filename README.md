@@ -52,6 +52,10 @@ docker run -p 8080:80 -v dist:/usr/share/nginx/html
 
 ## SOME HANDY COMMANDS
 ```batch
-docker ps -a
-docker rm [container id from previous command]
+docker ps -a // this will list all the available containers
+docker rm [container id] // this will remove the container
+docker stop [container id] // this will stop the container
+docker system prune // this will remove all dangling images
+docker images // this will list all the images we've on our machine
+docker rmi [img id] // this will remove the image
 ```
