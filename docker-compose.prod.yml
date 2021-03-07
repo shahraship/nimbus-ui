@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+
+  nginx:
+    container_name: nimbus-ui
+    image: nimbus-ui
+    build:
+      context: .
+      dockerfile: nginx.prod.dockerfile
+    volumes:
+      - ./dist:/usr/share/nginx/html
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
