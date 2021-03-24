@@ -1,0 +1,167 @@
+@import '~@angular/material/core/theming/palette';
+// defaults for text
+$dark-primary-text: #1e2532;
+$dark-secondary-text: rgba($dark-primary-text, 0.54);
+$dark-disabled-text: rgba($dark-primary-text, 0.38);
+$dark-dividers: rgba($dark-primary-text, 0.12);
+$dark-focused: rgba($dark-primary-text, 0.12);
+
+$light-primary-text: #ffffff;
+$light-secondary-text: rgba($light-primary-text, 0.7);
+$light-disabled-text: rgba($light-primary-text, 0.5);
+$light-dividers: rgba($light-primary-text, 0.12);
+$light-focused: rgba($light-primary-text, 0.12);
+
+// mat-color compatible palettes
+$oc-surface: (
+  50: #748097,
+  100: #5d6b85,
+  200: #505d75,
+  300: #3a4457,
+  400: #2f3849,
+  500: #283040,
+  600: #242b3a,
+  700: #1e2532,
+  800: #181e2a,
+  900: #0f131c,
+  contrast: (
+    50: #909092,
+    100: $light-primary-text,
+    200: $light-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+  ),
+);
+
+$oc-azure: (
+  50: #e7f3fd,
+  100: #c2e1fb,
+  200: #99cef9,
+  300: #70baf6,
+  400: #52abf4,
+  500: #339cf2,
+  600: #2e8ee4,
+  700: #277cd1,
+  800: #216bbf,
+  900: #184da0,
+  A100: #ffffff,
+  A200: #e5efff,
+  A400: #b2d0ff,
+  A700: #98c0ff,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  ),
+);
+
+$oc-green: (
+  50: #e9f6eb,
+  100: #c8e9cc,
+  200: #a3daaa,
+  300: #7ecb88,
+  400: #62c06f,
+  500: #46b555,
+  600: #3da64b,
+  700: #329340,
+  800: #288236,
+  900: #136323,
+  A100: #c9ffce,
+  A200: #96ff9f,
+  A400: #63ff70,
+  A700: #4aff59,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $dark-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  ),
+);
+
+$oc-scarlet: (
+  50: #ffe9ed,
+  100: #fec8d1,
+  200: #fda4b2,
+  300: #fc7f93,
+  400: #fc637c,
+  500: #fb4865,
+  600: #fa415d,
+  700: #fa3853,
+  800: #f93049,
+  900: #f82137,
+  A100: #ffffff,
+  A200: #fffcfd,
+  A400: #ffc9ce,
+  A700: #ffb0b7,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $dark-primary-text,
+    400: $dark-primary-text,
+    500: $dark-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $dark-primary-text,
+    A400: $dark-primary-text,
+    A700: $dark-primary-text,
+  ),
+);
+
+$oc-neutral: (
+  50: #ebebec,
+  100: #cdcdd1,
+  200: #abadb1,
+  300: #898c91,
+  400: #70737a,
+  500: #575a62,
+  600: #4f525a,
+  700: #464850,
+  800: #393b43,
+  900: #2c2e34,
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+  ),
+);
+
+$surface: mat-palette($oc-surface, 700, 500, 900);
+$green: mat-palette($oc-green, 500, 300, 800);
+$neutral: mat-palette($oc-neutral, 500, 300, 800);

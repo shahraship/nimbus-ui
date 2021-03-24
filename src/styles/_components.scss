@@ -1,0 +1,11 @@
+$mat-theme-ignore-duplication-warnings: true;
+
+@import 'components/mat-button';
+@import 'components/mat-list';
+@import 'components/mat-table';
+
+@mixin oc-component-themes($theme) {
+  @include oc-button-theme($theme);
+  @include oc-list-theme($theme);
+  @include oc-table-theme($theme);
+}

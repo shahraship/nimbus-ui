@@ -1,0 +1,47 @@
+// current theme defaults
+$mat-dark-theme-background: (
+  status-bar: black,
+  app-bar: map-get($oc-surface, 500),
+  background: map-get($oc-surface, 700),
+  hover: rgba(white, 0.04),
+  card: map-get($oc-surface, 500),
+  dialog: map-get($mat-grey, 800),
+  disabled-button: rgba(white, 0.04),
+  raised-button: map-get($mat-grey, 800),
+  focused-button: $light-focused,
+  selected-button: map-get($mat-grey, 900),
+  selected-disabled-button: map-get($mat-grey, 800),
+  disabled-button-toggle: black,
+  unselected-chip: map-get($mat-grey, 700),
+  disabled-list-option: black,
+  tooltip: map-get($mat-grey, 700),
+);
+
+$mat-dark-theme-foreground: (
+  base: white,
+  divider: $light-dividers,
+  dividers: $light-dividers,
+  disabled: $light-disabled-text,
+  disabled-button: rgba(white, 0.3),
+  disabled-text: $light-disabled-text,
+  elevation: black,
+  hint-text: $light-disabled-text,
+  secondary-text: $light-secondary-text,
+  icon: white,
+  icons: white,
+  text: white,
+  slider-min: white,
+  slider-off: rgba(white, 0.3),
+  slider-off-active: rgba(white, 0.3),
+);
+// end defaults
+
+$oc-dark-primary: mat-palette($oc-azure, 500, 300, 800);
+$oc-dark-accent: mat-palette($oc-green, 500, 300, 800);
+$oc-dark-warn: mat-palette($oc-scarlet);
+
+$oc-dark-theme: mat-dark-theme(
+  $oc-dark-primary,
+  $oc-dark-primary,
+  $oc-dark-warn
+);

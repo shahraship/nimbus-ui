@@ -1,0 +1,59 @@
+@import '~@angular/material/theming';
+
+@mixin oc-list-theme($theme) {
+  // doesn't use theme defined colors at the moment, pulls from another palette color
+  .mat-list-base {
+    .mat-list-item,
+    .mat-list-option {
+      &:nth-of-type(odd) {
+        background-color: mat-color($oc-surface, 500);
+      }
+
+      &:nth-of-type(even) {
+        background-color: mat-color($oc-surface, 400);
+      }
+
+      &:hover {
+        background-color: mat-color($oc-surface, 300);
+      }
+
+      &.selected {
+        background-color: mat-color($oc-surface, 700);
+        border-left: 1px solid mat-color($oc-green, 500);
+      }
+    }
+
+    // storing this here, for now, to ensure colors remain consistent
+    // need to re-define them because of increased specificity, avoiding !important
+    cap-datagrid-item {
+      &:nth-of-type(odd) {
+        .mat-list-item,
+        .mat-list-option {
+          background-color: mat-color($oc-surface, 500);
+        }
+      }
+
+      &:nth-of-type(even) {
+        .mat-list-item,
+        .mat-list-option {
+          background-color: mat-color($oc-surface, 400);
+        }
+      }
+
+      &:hover {
+        .mat-list-item,
+        .mat-list-option {
+          background-color: mat-color($oc-surface, 300);
+        }
+      }
+
+      .mat-list-item,
+      .mat-list-option {
+        &.selected {
+          background-color: mat-color($oc-surface, 700);
+          border-left: 1px solid mat-color($oc-green, 500);
+        }
+      }
+    }
+  }
+}

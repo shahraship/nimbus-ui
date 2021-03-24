@@ -1,0 +1,57 @@
+@import '~@angular/material/theming';
+
+@mixin oc-button-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+
+  // Only basic and stroked buttons (not raised, FABs or icon buttons) have a hover style.
+  // Use the same visual treatment for hover as for focus.
+  @include mat-button-typography($oc-typography);
+  @include mat-button-theme(mat-dark-theme($primary, $accent, $warn));
+
+  // set the outline of the stroked button to match the text color
+  .mat-stroked-button.mat-primary:not(.mat-button-disabled) {
+    border-color: mat-color($primary);
+  }
+
+  .mat-stroked-button.mat-accent:not(.mat-button-disabled) {
+    border-color: mat-color($accent);
+  }
+
+  .mat-stroked-button.mat-warn:not(.mat-button-disabled) {
+    border-color: mat-color($warn);
+  }
+
+  .mat-button,
+  .mat-stroked-button,
+  .mat-flat-button {
+    letter-spacing: 0.04rem;
+  }
+
+  // up the line height since we have a larger font size
+  $oc-button-line-height: 41px;
+  $oc-stroked-button-line-height: $oc-button-line-height - 2;
+
+  // in the material source this includes .mat-icon-button, we exclude it because we change the default font size
+  // and it throws it off center
+  .mat-button,
+  .mat-flat-button {
+    line-height: $oc-button-line-height !important;
+  }
+
+  .mat-stroked-button {
+    line-height: $oc-stroked-button-line-height !important;
+  }
+
+  .button-row button:not(:last-child),
+  .button-row a:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  // we use 16px for button text, but on mat-icon button it causes them to be off-center
+  // revert it back to 14px (the default) to fix the issue
+  .mat-icon-button {
+    font-size: 14px !important;
+  }
+}

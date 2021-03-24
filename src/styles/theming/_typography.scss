@@ -1,0 +1,17 @@
+$oc-typography: mat-typography-config(
+  $font-family: 'Roboto, "Helvetica Neue", Arial, sans-serif',
+  $display-4: mat-typography-level(96px, 115px, 400),
+  $display-3: mat-typography-level(60px, 78px, 400),
+  $display-2: mat-typography-level(48px, 62px, 400),
+  $display-1: mat-typography-level(34px, 44px, 700),
+  $headline: mat-typography-level(26px, 34px, 700),
+  $title: mat-typography-level(20px, 28px, 700),
+  $subheading-2: mat-typography-level(16px, 22px, 700),
+  $subheading-1: mat-typography-level(14px, 20px, 700),
+  $body-1: mat-typography-level(16px, 22px, 400),
+  $body-2: mat-typography-level(16px, 22px, 700),
+  $caption: mat-typography-level(14px, 20px, 400),
+  $button: mat-typography-level(16px, 16px, 500),
+  // Line-height must be unit-less fraction of the font-size.
+  $input: mat-typography-level(16px, 1.125, 400),
+);

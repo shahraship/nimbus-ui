@@ -1,0 +1,38 @@
+@import '~@angular/material/theming';
+
+@mixin oc-table-theme($theme) {
+  // doesn't use theme defined colors at the moment, pulls from a palette color
+  // doesn't use theme defined colors at the moment, pulls from a palette color
+  .mat-table {
+    border: 2px solid mat-color($oc-surface, 400);
+  }
+
+  .mat-table > .mat-header-row,
+  .mat-table > .mat-footer-row,
+  .mat-table > .mat-row:nth-of-type(even),
+  .mat-table thead > .mat-header-row,
+  .mat-table tfoot > .mat-footer-row,
+  .mat-table tbody > .mat-row:nth-of-type(even) {
+    background-color: mat-color($oc-surface, 400);
+  }
+
+  .mat-table > .mat-row:nth-of-type(odd),
+  .mat-table tbody > .mat-row:nth-of-type(odd),
+  .mat-paginator {
+    background-color: mat-color($oc-surface, 500);
+  }
+
+  .mat-table > .mat-row:hover,
+  .mat-table tbody > .mat-row:hover {
+    background-color: mat-color($oc-surface, 300);
+  }
+
+  .mat-table > .mat-header-row,
+  .mat-table > .mat-footer-row,
+  .mat-table > .mat-row,
+  .mat-table th.mat-header-cell,
+  .mat-table td.mat-cell,
+  .mat-table td.mat-footer-cell {
+    border: none;
+  }
+}

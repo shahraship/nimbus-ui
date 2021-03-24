@@ -1,0 +1,19 @@
+@import '~normalize.css';
+
+@import 'theming';
+@import 'components';
+
+@include mat-core($oc-typography);
+
+@include angular-material-theme($oc-dark-theme);
+@include oc-component-themes($oc-dark-theme);
+
+@import 'utilities';
+
+@import "~ag-grid-community/dist/styles/ag-grid.css";
+@import "~ag-grid-community/dist/styles/ag-theme-alpine.css";
+
+.oc-light-theme {
+  @include angular-material-color($oc-light-theme);
+  @include oc-component-themes($oc-light-theme);
+}
